@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Proptypes from 'prop-types';
 
 export const AddCategory = ({onNewCategory}) => {// Es la prop que paso en el propType del compoenente.
   
@@ -35,5 +35,8 @@ export const AddCategory = ({onNewCategory}) => {// Es la prop que paso en el pr
   )
 }
 
+AddCategory.propTypes = {
+    onNewCategory: Proptypes.func.isRequired,
+}
 
 
