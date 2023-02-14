@@ -23,7 +23,7 @@ export const AddCategory = ({onNewCategory}) => {// Es la prop que paso en el pr
 
     return (
 
-        <form onSubmit={ (event) => onSubmit(event)}>
+        <form onSubmit={ (event) => onSubmit(event)} aria-label='form' >
             <input
                 type='text'
                 placeholder="Buscar gif"
