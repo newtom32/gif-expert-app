@@ -12,7 +12,7 @@ export const AddCategory = ({onNewCategory}) => {// Es la prop que paso en el pr
 
     const onSubmit = (event) =>{
         event.preventDefault();
-        if( inputValue.trim().length <= 1) return;
+        if( inputValue.length <= 1) return;
 
        //setCategories((categories) =>[ inputValue, ...categories]);
         onNewCategory(inputValue.trim());
